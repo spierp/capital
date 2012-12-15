@@ -1,0 +1,35 @@
+h1. "Wandering Mountain":http://wandering-mountain-8929.herokuapp.com/
+
+h4.  Status: Closed Beta.  
+
+h3.  Concept
+
+h3. Deployment:
+
+* Heroku cedar stack. "More":https://devcenter.heroku.com/articles/cedar.  
+* 100% SSL encrypted with Heroku SSL Endpoint. "More":https://devcenter.heroku.com/articles/ssl-endpoint.
+* All application traffic routed through subdomain-based hostnames. "More":https://devcenter.heroku.com/articles/avoiding-naked-domains-dns-arecords.
+* Multithreading supported by a "Redis":http://redis.io/ instance.
+* Git version control.
+
+h3. Under the hood:
+
+* "Sidekiq":https://github.com/mperham/sidekiq background processing.  Handles multiple jobs concurrently using threads instead of processes for increased efficiency.
+* "Sinatra":https://github.com/sinatra/sinatra based web monitor for Sidekiq workers.
+* "PostgreSQL":http://en.wikipedia.org/wiki/PostgreSQL object-relational database.
+* "Carrierwave":https://github.com/jnicklas/carrierwave and "Fog":https://github.com/fog/fog cloud storage on "Amazon S3 servers":http://aws.amazon.com.
+* "Devise":https://github.com/plataformatec/devise user authentication.
+* "Twitter Bootstrap":http://twitter.github.com/bootstrap/ front-end framework for CSS styling with added "SASS":http://sass-lang.com/ functionality.  
+* "RMagick":https://github.com/rmagick/rmagick image processing.  
+
+
+h3. Functionality
+* Advanced search
+* View my projects
+* Message board
+
+
+h4.  Known bugs/issues
+change devise mail options, see railscast
+
+h4.  Wishlist
