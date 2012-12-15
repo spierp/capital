@@ -1,6 +1,7 @@
   Capital::Application.routes.draw do
     
   devise_for :users
+  resources :subscribers
 
     root to: 'static_pages#home'
     match '/users', to: 'static_pages#users'
