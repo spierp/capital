@@ -30,6 +30,6 @@ h3. Functionality
 
 
 h4.  Known bugs/issues
-change devise mail options, see railscast
+* change devise mail options, see railscast
 
 h4.  Wishlist
