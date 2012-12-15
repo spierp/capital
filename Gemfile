@@ -14,7 +14,7 @@ gem 'bootstrap-will_paginate', '0.0.6'
 #gem 'geocoder'
 #gem 'gmaps4rails'
 
-#gem 'devise'
+gem 'devise'
 #gem "devise-async"
 #gem "devise_invitable"
 
