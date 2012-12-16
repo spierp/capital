@@ -1,1 +1,16 @@
-this is then index
+<table class="table table-striped">
+	<thead>
+	  <tr>
+	    <th>ID</th>
+	    <th>EMAIL</th>
+	  </tr>
+	</thead>
+	<tbody>
+	<% for subscriber in @subscribers %>
+	<tr>
+		<td><%= subscriber.id %></td>
+		<td><%= subscriber.email %></td>
+	</tr>
+	<% end %>
+	</tbody>
+</table>	

@@ -1,13 +1,24 @@
-<div class="container">
 
   <!-- Main hero unit for a primary marketing message or call to action -->
-  <div class="hero-unit">
+  <header class="clearfix">
+	<div class="splash">
+		<div class="hero-unit">
     <h1>Hello, world!</h1>
     <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><a class="btn btn-primary btn-large">Subscribe &raquo;</a></p>
-  </div>
+    <p><%= form_for(@subscriber) do |f| %>
+		<%= render 'shared/error_messages', object: @subscriber %>	
+
+		<%= f.text_field :email %>
+
+		<%= f.submit "Subscribe", class: "btn btn-large btn-primary"%>
+
+	<% end %></p>
+	</div>
+	</div>
+  </header>
 
   <!-- Example row of columns -->
+<div class="container">
   <div class="row">
     <div class="span4">
       <h2>Heading</h2>
@@ -25,7 +36,5 @@
       <p><a class="btn" href="#">View details &raquo;</a></p>
     </div>
   </div>
-
-
-
 </div> <!-- /container -->
+

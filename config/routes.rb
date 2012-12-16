@@ -3,7 +3,7 @@
   devise_for :users
   resources :subscribers
 
-    root to: 'static_pages#home'
+    root to: 'subscribers#new'
     match '/users', to: 'static_pages#users'
     
   # The priority is based upon order of creation:
