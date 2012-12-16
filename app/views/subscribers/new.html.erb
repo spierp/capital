@@ -26,14 +26,9 @@
              </div>
             <%= form_for(@subscriber) do |f| %>
 				<%= render 'shared/error_messages', object: @subscriber %>	
-
-				<%= f.email_field :email, :class => "form" %>
-
-				<%= f.submit "Submit", class: "btn btn-large btn-primary"%>
-
+				<%= f.email_field :email, :class => "form", :placeholder => "ADD YOUR EMAIL" %>
+				<%= f.submit "Submit", class: "btn btn-large btn-danger", :style => "padding:13px; margin-top:12px; margin-left:20px" %>
 			<% end %>
-             
-
              </div>
          </div>
       </div>
