@@ -1,40 +1,175 @@
 
-  <!-- Main hero unit for a primary marketing message or call to action -->
-  <header class="clearfix">
-	<div class="splash">
-		<div class="hero-unit">
-    <h1>Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    <p><%= form_for(@subscriber) do |f| %>
-		<%= render 'shared/error_messages', object: @subscriber %>	
+<!-- Top Area -->
+<div class="tops">
+   <div class="container">
+      <div class="row">
+         <div class="span12">
+            <!-- Logo -->
+             <div class="logo">
+               <div class="padd">
+                  <div class="logo-pic">
+                     <!-- Add your logo image in below line. Replace # with your site url. -->
+                     <a href="#"><img src="img/logo.png" alt=""></a>
+                  </div>
+                  <div class="logo-text">
+                     <!-- Add company name in below line. Replace # with your site url. -->
+                     <h1><a href="#">Company Logo</a></h1>
+                  </div>   
+               </div>   
+             </div>
+             <div class="csoon">
+               <div class="padd">
+                  <!-- Coming Soon section. -->
+                  <h2>Coming Soon</h2>
+                  <p>Integer molestie libero augue in tempus massa. Nullam pretium tincidunt nisl id tincidunt.</p>
+               </div>
+             </div>
+            <!-- Countdown timer section starts here. To Set date and time, goto JavaScript section below (above "</body>" tag). Under title "Countdown", add your date and time in appropriate fields.-->
+             
 
-		<%= f.text_field :email %>
-
-		<%= f.submit "Subscribe", class: "btn btn-large btn-primary"%>
-
-	<% end %></p>
-	</div>
-	</div>
-  </header>
-
-  <!-- Example row of columns -->
-<div class="container">
-  <div class="row">
-    <div class="span4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
-    </div>
-    <div class="span4">
-      <h2>Heading</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
+             </div>
+         </div>
+      </div>
    </div>
-    <div class="span4">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
+</div>   
+	
+<!-- Bottom section -->
+   
+<div class="bottoms">
+   <div class="container">
+      <!-- Subscribe section -->
+      <div class="subscribe">
+         <div class="row">
+            <div class="span8">
+               <div class="padd">
+                  <!-- Some text -->
+                  <p class="sub">Sed blandit enim id justo blandit sodales justo lectus commodo libero</p> 
+               </div>
+            </div>
+            <div class="span4">
+               <div class="padd">
+                  <!-- Subscription form with email field and button -->
+                  <form class="form-search">
+                     <div class="input">
+                        <input type="text" class="input-medium" placeholder="Subscribe">
+                        <button type="submit" class="btn btn-warning">Subscribe</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cols">
+         <div class="row">
+            <div class="span4">
+               <div class="padd">
+                  <!-- About section -->
+                  <div class="widget"> 
+                     <!-- About title -->
+                     <h3><span>About Us</span></h3>
+                     <!-- About para -->
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. <a href="#">Praesent ultricies</a> enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. </p>
+                     <div class="socials">
+                        <!-- Social media icons. Replace # with your social profile links. -->
+                        <a href="#" class="tip" data-original-title="Facebook"><img src="assets/facebook.png" alt=""></a>
+                        <a href="#" class="tip" data-original-title="Twitter"><img src="assets/twitter.png" alt=""></a>
+                        <a href="#" class="tip" data-original-title="Google Plus"><img src="assets/googleplus.png" alt=""></a>
+                        <a href="#" class="tip" data-original-title="LinkedIn"><img src="assets/linkedin.png" alt=""></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="span4">
+               <div class="padd">
+                  <div class="widget">
+                     <!-- Twitter section -->
+                     <h3><span>Twitter</span></h3>
+                     <p>
+                        <!-- To add your twitter username, search this document for the word "ashobiz" (without quotes). ashobiz is my twitter username. Now simply replace the word ashobiz with your twitter username. Done. -->
+                        <!-- Below line is important to display twitter feeds -->
+                        </p><div class="tweet"><ul class="tweet_list"><li class="tweet_first tweet_odd"><span class="tweet_text">40 Creative Examples of Pictogram Movie Posters <a href="http://speckyboy.com/2012/10/10/40-creative-examples-of-pictogram-movie-posters/">speckyboy.com/2012/10/10/40-…</a></span></li><li class="tweet_even"><span class="tweet_text">20 More World Map Source Files <a href="http://speckyboy.com/2012/10/08/20-more-world-map-source-files-psd-eps-ai-svg-png/">speckyboy.com/2012/10/08/20-…</a></span></li><li class="tweet_odd"><span class="tweet_text">50 Free Web-Based Apps and Tools for Web Developers  <a href="http://speckyboy.com/2012/10/01/50-free-web-services-apps-and-tools-for-web-developers/">speckyboy.com/2012/10/01/50-…</a></span></li><li class="tweet_even"><span class="tweet_text">Ideas: The Force Behind the Designer <a href="http://speckyboy.com/2012/10/12/is-it-about-design-or-is-it-all-about-the-money/">speckyboy.com/2012/10/12/is-…</a></span></li><li class="tweet_odd"><span class="tweet_text">How to Create Lazy-Loading Images for your Website <a href="http://speckyboy.com/2012/10/18/how-to-create-lazy-loading-images-for-your-website/">speckyboy.com/2012/10/18/how…</a></span></li></ul></div>
+                     <p></p>
+                  </div>
+               </div>
+            </div>
+            <div class="span4">
+               <div class="padd">
+                  <div class="widget">
+                     <!-- Not working Contact us section. It has 3 fields, Name, Email and Comment. -->
+                     <h3><span>Contact Us</span></h3>
+                     <div class="form">
+                       <form class="form-horizontal">
+                         <fieldset>
+                           <div class="control-group">
+                             <label class="control-label" for="name">Name</label>
+                             <div class="controls">
+                               <input type="text" class="input-medium" id="name">
+                             </div>
+                           </div>
+                           <div class="control-group">
+                             <label class="control-label" for="email">Email</label>
+                             <div class="controls">
+                               <input type="text" class="input-medium" id="email">
+                             </div>
+                           </div>
+                           <div class="control-group">
+                             <label class="control-label" for="comment">Comment</label>
+                             <div class="controls">
+                               <textarea class="input-madium" id="comment" rows="3"></textarea>
+                             </div>
+                           </div>
+                           <div class="form-actions">
+                             <button type="submit" class="btn">Submit</button>
+                           </div>
+                         </fieldset>
+                       </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>  
+      </div>
+   </div>
+</div>
+   
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+         <!-- Copyright section. You can add extra links here. Replace below line with your site url and site name. -->
+        <div class="fpadd">Copyright © 2012 - <a href="#">Your Site</a></div>
+      </div>
     </div>
   </div>
-</div> <!-- /container -->
+</footer>		
+
+<!-- JS -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.tweet.js"></script>
+<script src="js/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript">
+
+/* Tool tip */
+$('.tip').tooltip();
+
+/* Twitter. Add your twitter username below. */
+jQuery(function($){
+   $(".tweet").tweet({
+      username: "ashobiz",
+      join_text: "auto",
+      avatar_size: 0,
+      count: 5,
+	      auto_join_text_default: "we said,",
+      auto_join_text_ed: "we",
+      auto_join_text_ing: "we were",
+      auto_join_text_reply: "we replied to",
+      auto_join_text_url: "we were checking out",
+      loading_text: "loading tweets...",
+      template: "{text}"
+   });
+}); 
+
+
 
