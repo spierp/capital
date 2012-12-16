@@ -1,7 +1,6 @@
 class SubscribersController < ApplicationController
 
   def index
-    before_filter :authenticate_user! 
     if current_user.try(:admin?)
       @subscribers = Subscriber.all
     else
