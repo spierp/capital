@@ -377,3 +377,31 @@ color:#C02942;
 {
 background-image: url('../img/list-b.png');
 }
+
+
+
+
+
+.alert {
+margin-bottom: 0px;
+}
+
+
+
+#subscriber_email {
+    width: 40%;
+		min-width: 300px;
+    padding: 13px 10px 12px;
+    font-size: 18px;
+		text-transform:uppercase;
+    border: none;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #9a9a9a;
+}

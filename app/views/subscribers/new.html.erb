@@ -24,7 +24,14 @@
                   <p>Integer molestie libero augue in tempus massa. Nullam pretium tincidunt nisl id tincidunt.</p>
                </div>
              </div>
-            <!-- Countdown timer section starts here. To Set date and time, goto JavaScript section below (above "</body>" tag). Under title "Countdown", add your date and time in appropriate fields.-->
+            <%= form_for(@subscriber) do |f| %>
+				<%= render 'shared/error_messages', object: @subscriber %>	
+
+				<%= f.email_field :email, :class => "form" %>
+
+				<%= f.submit "Submit", class: "btn btn-large btn-primary"%>
+
+			<% end %>
              
 
              </div>
