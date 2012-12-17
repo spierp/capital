@@ -26,7 +26,7 @@
              </div>
             <%= form_for(@subscriber) do |f| %>
 				<%= render 'shared/error_messages', object: @subscriber %>	
-				<%= f.email_field :email, :class => "form", :placeholder => "ADD YOUR EMAIL" %>
+				<%= f.email_field :email, :class => "form", :style => "width: 40%;min-width: 290px;padding: 13px 10px 12px;font-size: 18px;text-transform:uppercase;border: none;-webkit-border-top-left-radius: 3px;-webkit-border-bottom-left-radius: 3px;-webkit-border-top-right-radius: 3px;-webkit-border-bottom-right-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-bottomleft: 3px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;color: #9a9a9a;", :placeholder => "ADD YOUR EMAIL" %>
 				<%= f.submit "Submit", class: "btn btn-large btn-danger", :style => "padding:13px; margin-top:12px; margin-left:20px" %>
 			<% end %>
              </div>
@@ -112,11 +112,7 @@
                   <div class="widget">
                      <!-- Twitter section -->
                      <h3><span>Twitter</span></h3>
-                     <p>
-                        <!-- To add your twitter username, search this document for the word "ashobiz" (without quotes). ashobiz is my twitter username. Now simply replace the word ashobiz with your twitter username. Done. -->
-                        <!-- Below line is important to display twitter feeds -->
-                        </p><div class="tweet"><ul class="tweet_list"><li class="tweet_first tweet_odd"><span class="tweet_text">40 Creative Examples of Pictogram Movie Posters <a href="http://speckyboy.com/2012/10/10/40-creative-examples-of-pictogram-movie-posters/">speckyboy.com/2012/10/10/40-…</a></span></li><li class="tweet_even"><span class="tweet_text">20 More World Map Source Files <a href="http://speckyboy.com/2012/10/08/20-more-world-map-source-files-psd-eps-ai-svg-png/">speckyboy.com/2012/10/08/20-…</a></span></li><li class="tweet_odd"><span class="tweet_text">50 Free Web-Based Apps and Tools for Web Developers  <a href="http://speckyboy.com/2012/10/01/50-free-web-services-apps-and-tools-for-web-developers/">speckyboy.com/2012/10/01/50-…</a></span></li><li class="tweet_even"><span class="tweet_text">Ideas: The Force Behind the Designer <a href="http://speckyboy.com/2012/10/12/is-it-about-design-or-is-it-all-about-the-money/">speckyboy.com/2012/10/12/is-…</a></span></li><li class="tweet_odd"><span class="tweet_text">How to Create Lazy-Loading Images for your Website <a href="http://speckyboy.com/2012/10/18/how-to-create-lazy-loading-images-for-your-website/">speckyboy.com/2012/10/18/how…</a></span></li></ul></div>
-                     <p></p>
+                     <div class="tweet"></div>
                   </div>
                </div>
             </div>
@@ -125,58 +121,46 @@
                   <div class="widget">
                      <!-- Not working Contact us section. It has 3 fields, Name, Email and Comment. -->
                      <h3><span>Contact Us</span></h3>
-                     <div class="form">
-                       <form class="form-horizontal">
-                         <fieldset>
-                           <div class="control-group">
-                             <label class="control-label" for="name">Name</label>
-                             <div class="controls">
-                               <input type="text" class="input-medium" id="name">
-                             </div>
-                           </div>
-                           <div class="control-group">
-                             <label class="control-label" for="email">Email</label>
-                             <div class="controls">
-                               <input type="text" class="input-medium" id="email">
-                             </div>
-                           </div>
-                           <div class="control-group">
-                             <label class="control-label" for="comment">Comment</label>
-                             <div class="controls">
-                               <textarea class="input-madium" id="comment" rows="3"></textarea>
-                             </div>
-                           </div>
-                           <div class="form-actions">
-                             <button type="submit" class="btn">Submit</button>
-                           </div>
-                         </fieldset>
-                       </form>
-                     </div>
+
+							<%= form_for(@subscriber) do |f| %>
+								<%= render 'shared/error_messages', object: @subscriber %>
+								<div class="control-group">	
+								<%= f.text_field :name, :class => "form-horizontal input", :placeholder => "Name" %>
+								</div>
+								<div class="control-group">	
+								<%= f.email_field :email, :class => "form-horizontal input", :placeholder => "Email" %>
+								</div>
+								<div class="control-group">	
+								<%= f.text_area :comment, :size => "40x5", :placeholder => "Comment", :class => "form-horizontal input" %>
+								</div>
+								<%= f.submit "Submit", class: "btn", :style => "width:90px;height:30px" %>
+							<% end %>	
+
                   </div>
                </div>
             </div>
          </div>  
       </div>
    </div>
-</div>
-   
-<!-- Footer -->
-<footer>
   <div class="container">
     <div class="row">
       <div class="span12">
          <!-- Copyright section. You can add extra links here. Replace below line with your site url and site name. -->
-        <div class="fpadd">Copyright © 2012 - <a href="#">Capital</a></div>
+        <div class="fpadd" style="text-align:center"><a href="#">Root Capital</a> © 2012</div>
+		<% if user_signed_in? && current_user.admin? %>
+		<div class="fpadd" style="text-align:center"><%= link_to "Subscriber List", subscribers_path %> | <%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+		<% else %>
+		<% end %>
       </div>
     </div>
   </div>
-</footer>		
+</div>
+   
+<!-- Footer -->
+	
 
 <!-- JS -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
 <script src="js/jquery.tweet.js"></script>
-<script src="js/jquery.lwtCountdown-1.0.js"></script>
 <script type="text/javascript">
 
 /* Tool tip */
@@ -184,20 +168,20 @@ $('.tip').tooltip();
 
 /* Twitter. Add your twitter username below. */
 jQuery(function($){
-   $(".tweet").tweet({
-      username: "ashobiz",
-      join_text: "auto",
-      avatar_size: 0,
-      count: 5,
-	      auto_join_text_default: "we said,",
-      auto_join_text_ed: "we",
-      auto_join_text_ing: "we were",
-      auto_join_text_reply: "we replied to",
-      auto_join_text_url: "we were checking out",
-      loading_text: "loading tweets...",
-      template: "{text}"
-   });
-}); 
+  $(".tweet").tweet({
+    join_text: "auto",
+    username: "B_Houk",
+    avatar_size: 48,
+    count: 3,
+    auto_join_text_default: " we said, ",
+    auto_join_text_ed: " we ",
+    auto_join_text_ing: " we were ",
+    auto_join_text_reply: " we replied ",
+    auto_join_text_url: " we were checking out ",
+    loading_text: "loading tweets..."
+  });
+});
+</script>
 
 
 

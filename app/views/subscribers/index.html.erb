@@ -1,16 +1,25 @@
-<table class="table table-striped">
-	<thead>
-	  <tr>
-	    <th>ID</th>
-	    <th>EMAIL</th>
-	  </tr>
-	</thead>
-	<tbody>
-	<% for subscriber in @subscribers %>
-	<tr>
-		<td><%= subscriber.id %></td>
-		<td><%= subscriber.email %></td>
-	</tr>
-	<% end %>
-	</tbody>
-</table>	
+<div class="container-fluid">
+	<h1>E-mail Subscribers / Comments</h1><br>
+	<table class="table table-striped">
+		<thead>
+		  <tr>
+		    <th>ID</th>
+		    <th>EMAIL</th>
+			<th>NAME</th>
+			<th>COMMENT</th>		
+		  </tr>
+		</thead>
+		<tbody>
+		<% for subscriber in @subscribers %>
+		<tr>
+			<td><%= subscriber.id %></td>
+			<td><%= subscriber.email %></td>
+			<td><%= subscriber.name %></td>
+			<td><%= subscriber.comment %></td>			
+		</tr>
+		<% end %>
+		</tbody>
+	</table>
+	
+	<h2><%= link_to "home", root_path %></h2>
+</div>	
