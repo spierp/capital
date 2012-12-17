@@ -21,6 +21,12 @@ class SubscribersController < ApplicationController
       render 'new'
     end
   end
+  
+  def destroy
+    Subscriber.find(params[:id]).destroy
+    flash[:success] = "Subscriber destroyed"
+    redirect_to subscribers_path
+  end
     
 end
 

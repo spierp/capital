@@ -6,7 +6,8 @@
 		    <th>ID</th>
 		    <th>EMAIL</th>
 			<th>NAME</th>
-			<th>COMMENT</th>		
+			<th>COMMENT</th>
+			<th>DELETE</th>		
 		  </tr>
 		</thead>
 		<tbody>
@@ -15,7 +16,10 @@
 			<td><%= subscriber.id %></td>
 			<td><%= subscriber.email %></td>
 			<td><%= subscriber.name %></td>
-			<td><%= subscriber.comment %></td>			
+			<td><%= subscriber.comment %></td>
+			<td><%= link_to "Delete", subscriber, method: :delete,
+										confirm: "You sure?", 
+										title: subscriber.email %></td>			
 		</tr>
 		<% end %>
 		</tbody>

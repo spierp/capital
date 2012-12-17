@@ -206,32 +206,6 @@ padding:10px 10px 5px 10px;
    .csoon p{
    font-size:16px;
    }
-   .timer{
-   max-width:300px !important;
-   }
-   #countdown_dashboard {
-   height: 60px  !important;
-   }
-   .dash {
-   width: 60px !important;
-   height: 64px !important;
-   margin-left:8px !important;
-   }
-   .dash .digit {
-   font-size: 25px !important;
-   width: 15px !important;
-   margin-top:0px;
-   line-height:30px !important;
-   }
-   .bor{
-   width:36px !important;
-   height:40px !important;
-   }
-   .dash_title {
-   bottom:3px;
-   right:5px;
-   font-size: 10px !important;
-   }
 }
 
 @media (max-width: 767px){
@@ -252,31 +226,6 @@ padding:10px 10px 5px 10px;
    .subscribe{
    padding-bottom:15px;
    text-align:center;
-   }
-   .timer{
-   max-width:470px;
-   }
-   #countdown_dashboard {
-   height: 80px;
-   }
-   .dash {
-   width: 80px;
-   height: 84px;
-   }
-   .dash .digit {
-   font-size: 35px;
-   width: 25px;
-   margin-top:0px;
-   line-height:40px;
-   }
-   .bor{
-   width:56px;
-   height:60px;
-   }
-   .dash_title {
-   bottom:3px;
-   right:5px;
-   font-size: 11px;
    }
 }
 
