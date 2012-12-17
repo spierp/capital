@@ -4,7 +4,7 @@ body{
 line-height: 25px;
 font-size:13px;
 font-family:Arial,Helvetica,sans-serif;
-color: #666;
+color: #303030;
 }
 
 .padd{
@@ -32,6 +32,7 @@ ul li{
 
 .tops{
 color:#fff;
+text-shadow: #8B4513 0px 2px 3px;
 text-align:center;
 }
 
@@ -73,14 +74,6 @@ font-family:'Oswald',Arial,Helvetica,sans-serif;
 
 /* Middle */
 
-.middles{
-color:#000;
-text-align:center;
-background:white;
-padding-top:20px;
-}
-
-
 /* Bottom */
 
 .bottoms{
@@ -116,10 +109,16 @@ margin:20px 0px;
 .cols .padd{
 background:#fff;
 border:1px solid #eee;
+     background-size: 100%;
+-webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+        border-radius: 6px;
+   			background:rgba(255,255,255,0.3);
 }
 
 .cols .widget{
 font-size:12px;
+
 }
 
 .cols h3{
@@ -295,7 +294,7 @@ margin-bottom: 0px;
 		margin: 0;
 		padding: 0;
 		overflow-y: hidden;
-		background-color: #F8F8F8;
+		background:rgba(255,255,255,0.3);
 	}
 	
 		.tweet_list li {
@@ -310,7 +309,7 @@ margin-bottom: 0px;
 			}
 		
 		.tweet_list .tweet_even {
-			background-color: #E8E8E8;
+			background:rgba(255,255,255,0.3);
 		}
 		
 		.tweet_list .tweet_avatar {
@@ -320,3 +319,8 @@ margin-bottom: 0px;
 			.tweet_list .tweet_avatar img {
 				vertical-align: middle;
 			}
+			
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}			
