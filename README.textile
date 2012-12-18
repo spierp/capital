@@ -33,3 +33,21 @@ h4.  Known bugs/issues
 * change devise mail options, see railscast
 
 h4.  Wishlist
+
+h4.  Names
+* neighborlending.com
+* funding.io
+* greenlakefunding.com
+
+
+* townsquarefunding.com
+* opengreenfunding.com
+* villagegreenfunding.com
+* grasslandfunding.com
+* openspacefunding.com
+* vicin.us
+* woo.la
+* vicinityfunding.com
+* vicinitylending.com
+* localslending.com
+* localitylending.com

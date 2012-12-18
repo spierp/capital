@@ -162,7 +162,7 @@ margin-top:20px;
 }
 
 .form-horizontal.input, .form-horizontal textarea{
-width:90%;
+width:95%;
 }
 
 .form-horizontal .control-label {
@@ -286,7 +286,6 @@ margin-bottom: 0px;
 
 .tweet,
 .query {
-	color: #085258;
 }
 
 	.tweet_list {
@@ -294,7 +293,6 @@ margin-bottom: 0px;
 		margin: 0;
 		padding: 0;
 		overflow-y: hidden;
-		background:rgba(255,255,255,0.3);
 	}
 	
 		.tweet_list li {
@@ -305,11 +303,11 @@ margin-bottom: 0px;
 		}
 		
 			.tweet_list li a {
-				color: #0C717A;
 			}
 		
 		.tweet_list .tweet_even {
-			background:rgba(255,255,255,0.3);
+			border-top:1px solid #eee;
+			border-bottom:1px solid #eee;			
 		}
 		
 		.tweet_list .tweet_avatar {
@@ -318,6 +316,7 @@ margin-bottom: 0px;
 		
 			.tweet_list .tweet_avatar img {
 				vertical-align: middle;
+				border: 2px solid #eee;
 			}
 			
 hr {
