@@ -1,8 +1,8 @@
 h1. "Neighbor Lending":http://neighborlending.com/
 
-h5.  Status: Closed Beta.  
+h5.  Status: Closed Beta.
 
-h3.  building stronger, more vibrant communities
+h3.  building stronger, more vibrant communities.
 
 h3. Deployment:
 
@@ -30,6 +30,6 @@ h4.  Known bugs/issues
 * change devise mail options, see railscast
 
 h4.  Wishlist
-
+functionality!
 
 
