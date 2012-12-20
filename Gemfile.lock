@@ -64,6 +64,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metamagic (2.0.4)
     mime-types (1.19)
     multi_json (1.5.0)
     orm_adapter (0.4.0)
@@ -142,6 +143,7 @@ DEPENDENCIES
   devise
   jquery-rails (= 2.0.2)
   jquery-ui-rails
+  metamagic
   pg (= 0.12.2)
   rails (= 3.2.8)
   rspec-rails (= 2.11.0)
