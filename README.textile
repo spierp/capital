@@ -35,19 +35,19 @@ h4.  Known bugs/issues
 h4.  Wishlist
 
 h4.  Names
+
+building stronger, more vibrant communities
+
+"provide efficient source of capital to small businesses and build stronger, more vibrant communities"
+"encourage organization and support of neighborhood small businesses"
+
 * neighborlending.com
-* funding.io
-* greenlakefunding.com
 
-
-* townsquarefunding.com
-* opengreenfunding.com
-* villagegreenfunding.com
-* grasslandfunding.com
-* openspacefunding.com
-* vicin.us
-* woo.la
-* vicinityfunding.com
-* vicinitylending.com
-* localslending.com
-* localitylending.com
+Benefits for the business to use Neighbor Lending for their next capital project:
+- Community involvement in capital raising process mitigates risk
+- Lower risk equates to lower cost of financing than you will find from a bank
+- Neighbor lending specializes in providing capital to brick and mortar business ventures which historically struggle to get financing from banks
+- Financing through debt encourages "ownership" by the community but without sacrificing control of operations from the proprietor
+- Resources such as mentorship, networking events, business to business lending opportunities, and advisory services are available to clients
+- getting community to be part of capital raising process is promotional as well
+- Involvement of the community as your creditors creates marketing agents for your business
