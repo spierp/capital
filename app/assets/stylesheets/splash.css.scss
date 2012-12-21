@@ -28,15 +28,22 @@ ul li{
    padding: 3px 0px;
 }
 
+#herotext {
+	padding:0px;
+	margin-left:-5px;
+}
+
 #herotext ul {
+	padding:0px;
+	margin:0px;
 }
 
 #herotext li {
-	font-size:24px;
+	font-size:22px;
 	line-height:35px;
 	color:#686868;
 	list-style: none;
-	margin:20px;
+	margin:0px;
 	margin-top:20px;
 }
 
