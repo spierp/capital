@@ -66,6 +66,6 @@ Capital::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   
   # Devise config
-  config.action_mailer.default_url_options = { :host => 'wandering-mountain-8929.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'www.neighborlending.com' }
   
 end
